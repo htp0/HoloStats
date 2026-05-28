@@ -9,8 +9,9 @@ target/
 
 # Dependencies
 lib/
-libs/
-dependency-reduced-pom.xml
+*.jar
+*.war
+*.ear
 
 # Logs and temp files
 *.log
@@ -25,13 +26,28 @@ dependency-reduced-pom.xml
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
+*.iml
+*.iws
+*.ipr
 
-# OS specific
+# System files
 .DS_Store
 Thumbs.db
 
-# Testing
-test-results/
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Gradle specific
+.gradle/
+!gradle.properties
+!gradlew
+!gradlew.bat
+
+# Maven specific
+!.mvn
+.mvn/wrapper/
+**/original-*
+**/*-SNAPSHOT.jar
 ```

@@ -88,9 +88,9 @@ public class HologramInstance {
                 );
             });
 
-            // Note: Per-player visibility (removeViewer) requires Paper 1.21+ with Java 21
-            // For Spigot 1.20.6 compatibility, the hologram will be visible to all players
-            // To enable per-player visibility, compile with Paper API 1.21+ and Java 21
+            // Note: Per-player visibility via removeViewer() requires Paper 1.21+ with Java 21
+            // For Spigot 1.20.6 compatibility, the hologram will be visible to all nearby players
+            // The seeThrough and defaultBackground settings still provide good visibility
 
             return display;
         } catch (Exception e) {
