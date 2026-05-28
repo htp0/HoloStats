@@ -1,15 +1,21 @@
 ```
-# Build artifacts
-target/
+# Compiled and build artifacts
 *.class
+*.o
+*.obj
+*.out
+build/
+target/
 
 # Dependencies
 lib/
 libs/
+dependency-reduced-pom.xml
 
 # Logs and temp files
 *.log
 *.tmp
+*.swp
 
 # Environment
 .env
@@ -26,12 +32,6 @@ libs/
 .DS_Store
 Thumbs.db
 
-# Coverage reports
-coverage/
-htmlcov/
-*.coverage
-
-# Maven
-.mvn/
-mvn/
+# Testing
+test-results/
 ```
