@@ -1,0 +1,37 @@
+```
+# Build artifacts
+target/
+*.class
+
+# Dependencies
+lib/
+libs/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+coverage/
+htmlcov/
+*.coverage
+
+# Maven
+.mvn/
+mvn/
+```
