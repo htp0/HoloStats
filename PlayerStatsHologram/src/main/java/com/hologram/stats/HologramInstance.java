@@ -80,9 +80,6 @@ public class HologramInstance {
                 entity.setSeeThrough(true);
                 entity.setLineWidth(200);
 
-                // Set scale (available in Paper 1.21+)
-                entity.setScale(0.8f);
-
                 // Set rotation to face the viewer initially
                 Location viewerLoc = viewer.getLocation();
                 entity.setRotation(
@@ -91,12 +88,9 @@ public class HologramInstance {
                 );
             });
 
-            // Hide from all players except the viewer (Paper 1.21+ feature)
-            for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
-                if (!onlinePlayer.equals(viewer)) {
-                    display.removeViewer(onlinePlayer);
-                }
-            }
+            // Note: Per-player visibility (removeViewer) requires Paper 1.21+ with Java 21
+            // For Spigot 1.20.6 compatibility, the hologram will be visible to all players
+            // To enable per-player visibility, compile with Paper API 1.21+ and Java 21
 
             return display;
         } catch (Exception e) {

@@ -2,7 +2,7 @@ api-version: '1.21'
 name: PlayerStatsHologram
 version: '${project.version}'
 main: com.hologram.stats.PlayerStatsHologramPlugin
-authors: [HologramDev]
+authors: [renyaow]
 description: Displays player stats hologram when crouching and looking at another player
 depend:
   - PlaceholderAPI
